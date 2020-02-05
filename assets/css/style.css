@@ -1,13 +1,6 @@
 .container {
     text-align: center;
 }
-.row {
-    justify-content: space-between;
+#test {
+    padding: 100%;
 }
-/* #time { */
-    /* margin-left: 20px;
-} */
-{
-    width: 100%;
-}
-#
