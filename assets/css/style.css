@@ -4,10 +4,16 @@
 .row {
     justify-content: space-between;
 }
-/* #time { */
-    /* margin-left: 20px;
-} */
-{
-    width: 100%;
+.save-btn { 
+    width: 100px;
+    padding: 15px;
+    background-color: rgb(59, 120, 206);
+    border: solid;
+    border: steelblue;
 }
-#
+.fa {
+    color: white;
+}
+.add-event{
+    width: 105%;
+}

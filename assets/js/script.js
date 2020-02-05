@@ -6,9 +6,9 @@ $( document ).ready(function() {
         var row =$(`<div data-time=${i} id="${i}" class="row">`);
         var time =$('<div class="col-md-2"><p class=" time">' + timing(i) + '<p/>');
         console.log(time)
-        var textarea = $(`<div class="col-md-8"><textarea id="messages${i} class="input" placeholder="add event"></textarea>`);
+        var textarea = $(`<div class="col-md-8"><textarea id="messages${i} class="add-event" placeholder="add event"></textarea>`);
         console.log(textarea)
-        var save =$(`<div class="col-md-2"><button class="save-btn" id=${i}><i class="fas fa-save"></i></button>`);
+        var save =$(`<div class="col-md-2"><button class="save-btn" id=${i}><i class="fa fa-save"></i></button>`);
         console.log(save)
 
         row.append(time);
