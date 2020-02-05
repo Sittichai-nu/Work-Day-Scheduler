@@ -1,6 +1,22 @@
 .container {
     text-align: center;
 }
-#test {
-    padding: 100%;
+.save-btn { 
+    width: 100px;
+    padding: 15px;
+    background-color: rgb(50, 129, 240);
+    border: solid;
+    border: rgb(152, 197, 233);
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
 }
+.fa {
+    color: white;
+}
+.text {
+    width: 100%;
+}
+.time {
+    margin-left: 40px;
+}
+.col-md-8 {

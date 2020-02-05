@@ -5,14 +5,12 @@ $( document ).ready(function() {
     for (var i = 9; i < 22; i++ ) {
         var row =$(`<div data-time=${i} id="${i}" class="row">`);
         var time =$('<div class="col-md-2"><p class=" time">' + timing(i) + '<p/>');
-        console.log(time)
-        var textarea = $(`<div class="col-md-8"><textarea id="messages${i} class="input" placeholder="Add New Event"></textarea>`);
-        console.log(textarea)
-        var save =$(`<div class="col-md-2"><button class="save-btn" id=${i}><i class="fas fa-save"></i></button>`);
+        var text = $(`<div class="col-md-8"><textarea class="text" id="${i} class="input" placeholder="add event"></textarea>`);
+        var save =$(`<div class="col-md-2"><button class="save-btn" id=${i}><i class="fa fa-save"></i></button>`);
         console.log(save)
 
         row.append(time);
-        row.append(textarea);
+        row.append(text);
         row.append(save);
         console.log(row)
 
@@ -35,4 +33,5 @@ $( document ).ready(function() {
     }
 
 })
-
+time.setAttribute("class", "time");
+text.setAttribute("class", "text")
