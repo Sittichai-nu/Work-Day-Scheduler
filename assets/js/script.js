@@ -4,9 +4,9 @@ $( document ).ready(function() {
     $(".lead").text(moment().format("dddd, MMMM Do YYYY, h:mm A"));
     for (var i = 9; i < 22; i++ ) {
         var row =$(`<div data-time=${i} id="${i}" class="row">`);
-        var time =$('<div class="col-md-2"><p class=" time">' + timing(i) + '<p/>');
-        var text = $(`<div class="col-md-8"><textarea class="text" id="${i} class="input" placeholder="add event"></textarea>`);
-        var save =$(`<div class="col-md-2"><button class="save-btn" id=${i}><i class="fa fa-save"></i></button>`);
+        var time =$('<div class="col-md-1"><p class=" time">' + timing(i) + '<p/>');
+        var text = $(`<div class="col-md-9"><textarea class="text" id=antothertext"${i} class="input" placeholder="Add Event"></textarea>`);
+        var save =$(`<div class="col-md-2" id"btn"><button class="save-btn" id=${i}><i class="fa fa-save"></i></button>`);
         console.log(save)
 
         row.append(time);
@@ -31,7 +31,7 @@ $( document ).ready(function() {
         hours = hours ? hours : 12;
         return hours + hour;
     }
-
-})
-time.setAttribute("class", "time");
-text.setAttribute("class", "text")
+  
+    time.setAttribute("class", "time");
+    text.setAttribute("class", "text");
+    });
