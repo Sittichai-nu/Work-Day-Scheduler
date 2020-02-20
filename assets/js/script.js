@@ -16,10 +16,10 @@ $( document ).ready(function() {
        
         getLocalStorage(i);
     }
-    function getLocalStorage(x) {
-        let value = localStorage.getItem(x);
+    function getLocalStorage(key) {
+        let value = localStorage.getItem(key);
         if (value){
-            $(`${x}`).text(value);
+            $(`${key}`).text(value);
         }
     }
    
@@ -43,11 +43,11 @@ $( document ).ready(function() {
             }
         }
     }
-   setInterval(function(){
-    timeColor();
-   },);
-   
+  
+
+timeColor();
+  
+  
+
 
     });
-
-
