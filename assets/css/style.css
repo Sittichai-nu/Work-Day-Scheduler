@@ -1,22 +1,49 @@
-.container {
+body {
+
+    margin: 0 auto;
+}
+h1 {
+    background-color: rgb(156, 169, 170);
+    text-align: center;
+    padding: 40px;
+    margin: 0 auto;
+}
+.date{
+    background-color: rgb(156, 169, 170);
+    margin: 0 auto;
     text-align: center;
 }
-.save-btn { 
-    width: 100px;
-    padding: 15px;
-    background-color: rgb(50, 129, 240);
-    border: solid;
-    border: rgb(152, 197, 233);
-    border-bottom-right-radius: 20px;
-    border-top-right-radius: 20px;
-}
-.fa {
-    color: white;
-}
-.text {
-    width: 100%;
+hr{ 
+background-color: black;    padding: 2px;
+    margin: 0 auto;
+    border: inset;
 }
 .time {
     margin-left: 40px;
 }
-.col-md-8 {
+.text {
+    width: 90%;
+    margin-left: 40px;
+}
+.save-btn {
+    background-color: rgb(7, 139, 216);
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 15px;
+    width: 100px;
+}
+.fa {
+    color: white;
+}
+.past {
+    background-color: rgb(156, 169, 170);
+
+  }
+  .present {
+    background-color: #d3372f;
+    color: white;
+ 
+  }
+  .future {
+    background-color: #26e226;
+  }
