@@ -2,9 +2,9 @@ $( document ).ready(function() {
     $(".date").text(moment().format("dddd, MMMM Do YYYY, h:mm A"));
     for (var i = 9; i < 22; i++ ) {
         var row =$(`<div data-time=${i} id="${i}" class="row">`);
-        var time =$('<div class="col-md-1"><p class=" time">' + timing(i) + '<p/>');
-        var text = $(`<div class="col-md-9"><textarea class="text" id=input${i} class="event" placeholder="Add Event"></textarea>`);
-        var save =$(`<div class="col-md-2"><button class="save-btn" id=${i}><i class="fa fa-save"></i></button>`);
+        var time =$('<div class="col-md-1"><p class=" time">' + timing(i) + '<p/><hr>');
+        var text = $(`<div class="col-md-9"><textarea class="text" id=input${i} class="description" placeholder="Add Event"></textarea>`);
+        var save =$(`<div class="col-md-2"><button class="saveBtn" id=${i}><i class="fa fa-save"></i></button>`);
         console.log(save)
 
         row.append(time);
@@ -14,7 +14,7 @@ $( document ).ready(function() {
 
         $("#content").append(row)
        
-        getLocalStorage(i);
+    getLocalStorage(i);
     }
     function getLocalStorage(key) {
         let value = localStorage.getItem(key);
@@ -45,9 +45,15 @@ $( document ).ready(function() {
     }
   
 
-timeColor();
-  
-  
+    timeColor();
 
-
+    var saveBtn =$('.saveBtn');
+    $('.saveBtn').on('click', function(event){
+        event.preventDefault();
+        console.log(event);
+        let eventId = $(this).attr('id');
+        let eventText = $(this).parent().siblings().children('.description').val();
+        localStorage.setItem(eventId, eventText);
+    })
     });
+   
